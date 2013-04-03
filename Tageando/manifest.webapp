@@ -1,0 +1,30 @@
+{
+  "version": "0.0.1",
+  "name": "TaguiAndo",
+  "description": "TaguiAndo",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icons/icono-camara.png"
+  },
+  "developer": {
+    "name": "El mejor equipo de #FirefoxOSAppDays",
+    "url": "http://comingsoon.com"
+  },
+  "installs_allowed_from": ["*"],
+  "orientation": ["portrait"],  
+  "locales": {
+    "es": {
+      "description": "Es la opción ideal para el desordenado hombre moderno. Con esta app se pueden ordenar por medio de tags las fotos y tal vez otros archivos. ",
+      "developer": {
+        "url": "http://comming.com"
+      }
+    },
+    "it": {
+      "description": " pronto !!!",
+      "developer": {
+        "url": "http://comingsoon.com"
+      }
+    }
+  },
+  "default_locale": "es"
+}

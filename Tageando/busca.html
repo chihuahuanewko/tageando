@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang='en'> 
+<head> 
+	<title>.: The amazing image search :.</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+	<script data-main="js/app" src="js/require-jquery.js"></script>
+	<script src="js/jquery.tagcanvas.min.js" type="text/javascript"></script>	
+	<script src="js/app.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/app.css" /> 
+</head> 
+<body> 
+
+
+
+<div data-role="page" id="selectTag" style="width: 100%; height: 100%; position: absolute;">
+
+	<div data-role="header">
+		<h1>Buscar</h1>
+		<a href="index.html">Inicio</a>
+	</div>
+
+	<div data-role="content" style="width: 100%; height: 100%;">	
+		<div id="buscador">
+			<input name="filtro" id="filtro" onkeyup="buscar(this);">
+		</div>
+		<div id="myCanvasContainer" >
+		 	<canvas width="300" height="300" id="myCanvas">
+		  		<p>Anything in here will be replaced on browsers that support the canvas element</p>
+		 	</canvas>
+		</div>
+		<div id="tags">
+		</div>
+		<script type="text/javascript">
+			generaLista(null);
+		</script>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<script type="text/javascript">
+  window.onload = function() {
+    try {
+     	TagCanvas.textColour = '#000000';
+      TagCanvas.Start('myCanvas', 'tags');
+    } catch(e) {
+      document.getElementById('myCanvasContainer').style.display = 'none';
+    }
+  };
+ </script>
+</body>
+</html>
